@@ -2,16 +2,16 @@
     /* ------------------------------------- */
     /* Paleta de Colores Base */
     /* ------------------------------------- */
-    --color-background-primary: #f4f4f9; /* Fondo de la página */
-    --color-text-primary: #333;           /* Color principal del texto */
+    --color-background-primary: #dadada; /* Fondo de la página */
+    --color-text-primary: #2048cc;           /* Color principal del texto */
     --color-card-background: #fff;       /* Fondo de la calculadora */
     --color-border-light: #ccc;          /* Borde de inputs */
-
+    --color-caret:#f5c907; 
     /* Colores Primarios (Título) */
     --color-primary: #007bff;            /* Azul del título */
 
     /* ------------------------------------- */
-    /* Colores del Botón de Acción (Calcular) */
+    /* Colores deal Botón de Acción (Calcular) */
     /* ------------------------------------- */
     --color-button-success: #28a745;     /* Verde base */
     --color-button-hover: #218838;       /* Verde al pasar el mouse */
@@ -32,52 +32,67 @@ body {
     color: var(--color-text-primary);
     display: flex;
     justify-content: center;
-    padding: 50px 20px;
+    padding: 3.125rem 1.25rem; 
 }
 
 .container {
     background: var(--color-card-background);
-    padding: 30px;
-    border-radius: 10px;
+    padding: 1.875rem; 
+    border-radius: 0.625rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 450px;
+    max-width: 50.125rem; 
+
 }
 
 h1 {
     color: var(--color-primary);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; 
+}
+p {
+  font-weight: bold;  
+  font-size: 1.21rem;;
+  text-align: center;
+}
+
+p img {
+    max-width: 20%; 
+    height: auto;
 }
 
 .input-group {
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem; 
+    caret-color: var(--color-caret);
 }
 
 .input-group label {
+    font-size: 1.21rem;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem; 
     font-weight: bold;
 }
 
 .input-group input {
+    font-size: 1.21rem;
     width: 95%;
-    padding: 8px;
+    padding: 0.5rem;
     border: 1px solid var(--color-border-light);
-    border-radius: 4px;
+    border-radius: var(--border-radius-base); 
 }
 
 button {
     width: 100%;
-    padding: 10px;
+    padding: 0.625rem; 
     background-color: var(--color-button-success);
     color: white;
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: var(--border-radius-base); 
+    font-size: 1.21rem;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 0.9375rem;
     transition: background-color 0.3s ease;
+    font-weight: bold; 
 }
 
 button:hover {
@@ -96,15 +111,16 @@ button:disabled {
 /* --- Gestión Visual de Errores y Resultados --- */
 
 .message-box {
-    padding: 15px;
-    border-radius: 5px;
-    margin-top: 20px;
+    padding: 0.9375rem; 
+    border-radius: 0.3125rem; 
+    margin-top: 1.25rem; 
 }
 
 #error-box {
     background-color: var(--color-error-background);
     border: 1px solid var(--color-error-border);
     color: var(--color-error-text);
+    font-size: 1.21rem;
 }
 
 /* Clases CLAVE controladas por JavaScript */
@@ -113,8 +129,10 @@ button:disabled {
 }
 
 .console-note {
-    font-size: 0.8em;
+    /* Tamaño de fuente relativo */
+    font-size: var(--font-size-small); /* 0.8em / 0.8rem */
     color: #6c757d;
     text-align: center;
-    margin-top: 20px;
+    /* Margen relativo */
+    margin-top: 1.25rem; /* 20px */
 }
