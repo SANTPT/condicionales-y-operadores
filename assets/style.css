@@ -1,0 +1,120 @@
+:root {
+    /* ------------------------------------- */
+    /* Paleta de Colores Base */
+    /* ------------------------------------- */
+    --color-background-primary: #f4f4f9; /* Fondo de la página */
+    --color-text-primary: #333;           /* Color principal del texto */
+    --color-card-background: #fff;       /* Fondo de la calculadora */
+    --color-border-light: #ccc;          /* Borde de inputs */
+
+    /* Colores Primarios (Título) */
+    --color-primary: #007bff;            /* Azul del título */
+
+    /* ------------------------------------- */
+    /* Colores del Botón de Acción (Calcular) */
+    /* ------------------------------------- */
+    --color-button-success: #28a745;     /* Verde base */
+    --color-button-hover: #218838;       /* Verde al pasar el mouse */
+    --color-button-active: #1e7e34;      /* Verde al hacer click */
+    --color-button-disabled: #94d0a2;    /* Verde pálido (deshabilitado) */
+
+    /* ------------------------------------- */
+    /* Colores de Alerta (Error Box) */
+    /* ------------------------------------- */
+    --color-error-background: #f8d7da;   /* Rojo claro de fondo */
+    --color-error-border: #f5c6cb;       /* Borde rojo */
+    --color-error-text: #721c24;         /* Texto rojo oscuro */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background-primary);
+    color: var(--color-text-primary);
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.container {
+    background: var(--color-card-background);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+h1 {
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid var(--color-border-light);
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-button-success);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-button-hover);
+}
+
+button:active {
+    background-color: var(--color-button-active);
+}
+
+button:disabled {
+    background-color: var(--color-button-disabled);
+    cursor: not-allowed;
+}
+
+/* --- Gestión Visual de Errores y Resultados --- */
+
+.message-box {
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#error-box {
+    background-color: var(--color-error-background);
+    border: 1px solid var(--color-error-border);
+    color: var(--color-error-text);
+}
+
+/* Clases CLAVE controladas por JavaScript */
+.error-hidden, .success-hidden {
+    display: none;
+}
+
+.console-note {
+    font-size: 0.8em;
+    color: #6c757d;
+    text-align: center;
+    margin-top: 20px;
+}

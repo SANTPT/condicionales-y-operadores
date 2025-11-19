@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/assets/style.css">
-    <title>Document</title>
+    <title>Cuadrática Gráfica con Errores</title>
+    <link rel="icon" href="data:;base64,=">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+    <div class="container">
+        <h1> Calculadora de Ecuación Cuadrática</h1>
+        <p>Introduce los coeficientes para ax^2 + bx + c = 0.</p>
+        
+        <div class="input-group">
+            <label for="a">Coeficiente a:</label>
+            <input type="number" id="a" value="1">
+        </div>
+        <div class="input-group">
+            <label for="b">Coeficiente b:</label>
+            <input type="number" id="b" value="-3">
+        </div>
+        <div class="input-group">
+            <label for="c">Coeficiente c:</label>
+            <input type="number" id="c" value="2">
+        </div>
+        
+        <button id="calcularBtn">Calcular Raíces</button>
+        
+        <div id="error-box" class="message-box error-hidden">
+            <h2> Error Detectado:</h2>
+            <p id="error-message"></p>
+        </div>
+        
+        <div id="result-box" class="message-box success-hidden">
+            <h2> Resultado:</h2>
+            <pre id="result-message"></pre>
+        </div>
+        
+        <p class="console-note">Los logs detallados del `try`, `catch`, `finally` y el `throw` aún se envían a la Consola (F12).</p>
+    </div>
     
+    <script src="G_errores.js"></script>
 </body>
 </html>
