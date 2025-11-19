@@ -1,0 +1,266 @@
+/* Estilos para todo el cuerpo de la página */
+body {
+    font-family: sans-serif; /* Fuente legible */
+    margin: 20px; /* Margen alrededor del contenido */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    color: #333; /* Color de texto oscuro */
+}
+
+/* Estilos para el encabezado principal */
+h1 {
+    color: #0056b3; /* Azul oscuro para el encabezado */
+    text-align: center; /* Centra el texto del encabezado */
+}
+
+/* Estilos para los párrafos */
+p {
+    line-height: 1.6; /* Espacio entre líneas para mejor legibilidad */
+    text-align: center; /* Centra el texto del párrafo */
+}
+
+/* Estilos para el botón */
+button {
+    display: block; /* Hace que el botón ocupe todo el ancho disponible */
+    margin: 20px auto; /* Centra el botón en la página */
+    padding: 10px 20px; /* Relleno interno del botón */
+    background-color: #007bff; /* Color de fondo azul para el botón */
+    color: white; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente para el botón */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+/* Estilos al pasar el ratón por encima del botón */
+ body { font-family: sans-serif; padding: 20px; background: #f4f4f4; }
+    input, select, button { margin: 5px; padding: 5px; }
+    #resultado { margin-top: 15px; font-weight: bold; }
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+    line-height: 1.6;
+}
+
+h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004085;
+    transform: translateY(1px);
+}
+
+Usa el código con precaución.
+
+
+/* styles.css */
+
+/* 1. Restablecimiento básico para asegurar consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Estilos para el cuerpo de la página (fondo, fuente y centrado) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Un azul claro suave */
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    margin: 0;
+}
+
+/* 3. Estilos para el contenedor principal del contenido */
+.container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+/* 4. Estilos para el título principal */
+h2 {
+    color: #0056b3; /* Un azul más oscuro y profesional */
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+/* 5. Estilos para el párrafo de instrucciones */
+p {
+    background-color: #e9ecef;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 0; /* No hay más elementos debajo del párrafo */
+}
+
+/* 6. Estilos para el elemento <script> (si estuviera visible, que no es el caso) */
+script {
+    display: block;
+    margin-top: 1rem;
+    color: #888;
+    font-size: 0.8rem;
+}
+/* styles.css */
+
+/* 1. Restablecimiento básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Estilos generales del cuerpo y fuente */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6; /* Fondo suave */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto; /* Centra el contenido en pantallas grandes */
+}
+
+/* 3. Estilos para los títulos */
+h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #2c3e50;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* 4. Estilos para los párrafos (estáticos y generados por JS) */
+p {
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* 5. Estilo específico para el párrafo de la nota importante (comentado en HTML, pero si se descomenta) */
+.note-important {
+    background-color: #fffacd; /* Color amarillo claro */
+    border-left: 5px solid #ffeb3b;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+/* 6. Estilo para el elemento <code> */
+code {
+    background-color: #e9ecef;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+/* 7. Estilo para el texto en negrita */
+b {
+    color: #d9534f; /* Un color rojo para resaltar */
+}
+/* styles.css */
+
+/* 1. Restablecimiento básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Estilos para el cuerpo de la página */
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #e9ecef; /* Un fondo gris claro */
+    color: #333;
+    line-height: 1.6;
+    /* Centra el contenido en la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 3. Estilos para el contenedor principal */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* 4. Estilos para el título principal */
+h1 {
+    color: #007bff; /* Un azul brillante */
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+/* 5. Estilos para el párrafo de instrucciones */
+p {
+    background-color: #d1ecf1; /* Un azul claro para destacar la instrucción */
+    padding: 15px;
+    border: 1px solid #bee5eb;
+    border-radius: 5px;
+    color: #007bff;
+    font-weight: bold;
+}
+
