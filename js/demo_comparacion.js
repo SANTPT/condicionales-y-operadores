@@ -1,16 +1,23 @@
 function demoComparacion() {
-  let entrada1 = document.getElementById("valorComparacion1").value;
-  let entrada2 = document.getElementById("valorComparacion2").value;
+  const entrada1 = document.getElementById("valorComparacion1").value;
+  const entrada2 = document.getElementById("valorComparacion2").value;
 
-  let valor1 = interpretar(entrada1);
-  let valor2 = interpretar(entrada2);
+  const valor1 = interpretar(entrada1);
+  const valor2 = interpretar(entrada2);
 
-  let salida = "<h2>Comparación == vs ===</h2>";
-  salida += `<p>Entrada 1: ${entrada1} → ${typeof valor1} (${valor1})</p>`;
-  salida += `<p>Entrada 2: ${entrada2} → ${typeof valor2} (${valor2})</p>`;
-  salida += `<p><strong>==</strong> → ${valor1 == valor2}</p>`;
-  salida += `<p><strong>===</strong> → ${valor1 === valor2}</p>`;
-  salida += `<p><strong>==</strong> compara solo el valor (puede convertir tipos), <strong>===</strong> compara valor y tipo (sin conversión).</p>`;
+  let salida = "<h2>Comparación de Operadores</h2>";
+  salida += `<p>Entrada 1: ${entrada1} → <strong>${typeof valor1}</strong> (${valor1})</p>`;
+  salida += `<p>Entrada 2: ${entrada2} → <strong>${typeof valor2}</strong> (${valor2})</p>`;
+  salida += "<ul>";
+  salida += `<li>${valor1} == ${valor2} → ${valor1 == valor2}</li>`;
+  salida += `<li>${valor1} === ${valor2} → ${valor1 === valor2}</li>`;
+  salida += `<li>${valor1} < ${valor2} → ${valor1 < valor2}</li>`;
+  salida += `<li>${valor1} > ${valor2} → ${valor1 > valor2}</li>`;
+  salida += `<li>${valor1} <= ${valor2} → ${valor1 <= valor2}</li>`;
+  salida += `<li>${valor1} >= ${valor2} → ${valor1 >= valor2}</li>`;
+  salida += "</ul>";
+  salida += `<p><strong>==</strong> compara solo el valor (con conversión de tipo). <strong>===</strong> compara valor y tipo exactos.</p>`;
+  salida += `<p><strong><</strong>, <strong>></strong>, <strong><=</strong>, <strong>>=</strong> comparan según orden lógico o numérico, según el tipo de dato.</p>`;
 
   document.getElementById("resultados").innerHTML = salida;
 }
