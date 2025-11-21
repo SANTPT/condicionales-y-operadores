@@ -1,33 +1,64 @@
-# Operadores en JavaScript
+## Condicionales, operadores, gestión de errores y métodos predefinidos en JavaScript
 
-Repositorio de ejemplos didácticos sobre operadores y estructuras de control en JavaScript. Contiene una página de ejemplo y varios scripts que muestran el comportamiento de operadores aritméticos, de comparación, lógicos, y los efectos de pre/post incremento y decremento.
+Repositorio de ejemplos didácticos sobre estructuras de control en JavaScript. Incluye una página de demostración y múltiples scripts que ilustran el comportamiento de:
 
-**Estructura**
+- Condicionales (`if`, `else`, `switch`)
+- Operadores aritméticos, de comparación y lógicos
+- Pre y post-incremento/decremento
+- Gestión de errores (`try/catch`)
+- Métodos predefinidos del lenguaje
+---
+## Estructura del proyecto
+
 - `operadores.html`: Página principal que carga los demos y muestra resultados.
 - `operadores.css`: Estilos para la página de ejemplo.
 - `js/` : Carpeta con ejemplos y scripts.
-	- `main.js` : Código principal y arranque de los demos.
-	- `demo_acumulativoSuma.js` : Ejemplo de operador acumulativo suma (`+=`).
-	- `demo_acumulativoResta.js` : Ejemplo de operador acumulativo resta (`-=`).
-	- `demo_acumulativoProducto.js` : Ejemplo de operador acumulativo multiplicación (`*=`).
-	- `demo_acumulativoDivision.js` : Ejemplo de operador acumulativo división (`/=`).
-	- `demo_comparacion.js` : Ejemplos de operadores de comparación (`==`, `===`, `>`, `<`, etc.).
-	- `demo_concatenacion.js` : Ejemplos de concatenación de strings.
-	- `demo_logicos.js` : Ejemplos de operadores lógicos (`&&`, `||`, `!`).
-	- `demo_preIncremento.js` : Ejemplo de pre-incremento (`++x`).
-	- `demo_postIncremento.js` : Ejemplo de post-incremento (`x++`).
-	- `demo_preDecremento.js` : Ejemplo de pre-decremento (`--x`).
-	- `demo_postDecremento.js` : Ejemplo de post-decremento (`x--`).
+  ```text
+.
+├── assets
+│   ├── css
+│   │   ├── condicionales.css
+│   │   ├── G_errores.css
+│   │   ├── img
+│   │   │   └── image-3741.png
+│   │   ├── nav.css
+│   │   ├── operadores.css
+│   │   └── predefinidos.css
+│   └── js
+│       ├── alert.js
+│       ├── Calc.js
+│       ├── condicionales.js
+│       ├── Confirm.js
+│       ├── ConsoleLog.js
+│       ├── demo_acumulativoDivision.js
+│       ├── demo_acumulativoProducto.js
+│       ├── demo_acumulativoResta.js
+│       ├── demo_acumulativoSuma.js
+│       ├── demo_comparacion.js
+│       ├── demo_concatenacion.js
+│       ├── demo_logicos.js
+│       ├── demo_postDecremento.js
+│       ├── demo_postIncremento.js
+│       ├── demo_preDecremento.js
+│       ├── demo_preIncremento.js
+│       ├── Desestructuracion.js
+│       ├── Documentewrite.js
+│       ├── G_errores.js
+│       ├── operadores_main.js
+│       └── Prompt.js
+├── G_errores.html
+├── index.html
+├── operadores.html
+├── predefinidos.html
+└── README.md
 
 **Cómo ejecutar**
-- Opción rápida: abrir `operadores.html` en un navegador (doble clic o `file://`).
+- Opción rápida: abrir `index.html` en un navegador (doble clic o `file://`).
 - Opción recomendada (servidor local): desde el directorio del proyecto ejecuta:
-
 ```bash
 python3 -m http.server 8000
-# Luego abre: http://localhost:8000/operadores.html
+# Luego abre: http://localhost:8000/index.html
 ```
-
 - También puedes usar la extensión *Live Server* de VS Code para servir y recargar automáticamente.
 
 **Uso**
@@ -36,8 +67,13 @@ python3 -m http.server 8000
 **Contribuciones**
 - Este repositorio está pensado para uso educativo. Si quieres mejorar ejemplos o corregir errores, crea un fork y abre un pull request.
 
-**Autor**
-- Proyecto mantenido por `German2024279`.
+**Autores**
+- Proyecto mantenido por `German2024279` y colaboradores:
+- Germán Illán https://github.com/German2024279
+- Fernando Nicasio Ibarra https://github.com/Fernan-doos
+- Santiago Patiño Torres https://github.com/SANTPT/
+- Mirel Volcán Calderón https://github.com/MirelSIG
+- Andrés Ocina (Asesor educativo Peñascal F5) https://github.com/andres63teacher
 
 **Licencia**
 - No hay una licencia explícita en este repositorio.
